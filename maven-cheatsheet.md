@@ -2,7 +2,7 @@
 <table>
 <col style="width:30%">
 <col style="width:5%">
-<tr><td>`--projects <arg>`</td><td>`-pl`</td><td>Comma-delimited list of specified reactor projects to build instead of all projects. A project can be specified by [groupId]:artifactId or by its relative path.</td></tr>
+<tr><td><code>--projects <arg></code></td><td>`-pl`</td><td>Comma-delimited list of specified reactor projects to build instead of all projects. A project can be specified by [groupId]:artifactId or by its relative path.</td></tr>
 <tr><td>`--resume-from <arg>`</td><td>`-rf`</td><td>Resume reactor from specified project</td></tr>
 <tr><td>`--activate-profiles <arg>`</td><td>`-P`</td><td>Comma-delimited list of profiles to activate</td></tr>
 <tr><td>`--non-recursive`</td><td>`-N`</td><td>Do not recurse into sub-projects</td></tr>
