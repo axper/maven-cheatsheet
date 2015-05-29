@@ -10,6 +10,15 @@
 <tr><td><code>deploy</code></td><td>done in an integration or release environment, copies the final package to the remote repository for sharing with other developers and projects</td></tr>
 </table>
 
+# Lifecycle
+<table>
+<tr><td><code>compile</code></td><td>this is the default scope, used if none is specified. Compile dependencies are available in all classpaths. Furthermore, those dependencies are propagated to dependent projects.</td></tr>
+<tr><td><code>provided</code></td><td>this is much like compile, but indicates you expect the JDK or a container to provide it at runtime. It is only available on the compilation and test classpath, and is not transitive.</td></tr>
+<tr><td><code>runtime</code></td><td>this scope indicates that the dependency is not required for compilation, but is for execution. It is in the runtime and test classpaths, but not the compile classpath.</td></tr>
+<tr><td><code>test</code></td><td>this scope indicates that the dependency is not required for normal use of the application, and is only available for the test compilation and execution phases.</td></tr>
+<tr><td><code>system</code></td><td>this scope is similar to `provided` except that you have to provide the JAR which contains it explicitly. The artifact is always available and is not looked up in a repository.</td></tr>
+</table>
+
 ## Specify projects
 <table>
 <col style="width:30%">
