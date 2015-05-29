@@ -1,3 +1,15 @@
+# Lifecycle
+<table>
+<tr><td><code>validate</code></td><td>validate the project is correct and all necessary information is available</td></tr>
+<tr><td><code>compile</code></td><td>compile the source code of the project</td></tr>
+<tr><td><code>test</code></td><td>test the compiled source code using a suitable unit testing framework. These tests should not require the code be packaged or deployed</td></tr>
+<tr><td><code>package</code></td><td>take the compiled code and package it in its distributable format, such as a JAR</td></tr>
+<tr><td><code>integration-test</code></td><td>process and deploy the package if necessary into an environment where integration tests can be run</td></tr>
+<tr><td><code>verify</code></td><td>run any checks to verify the package is valid and meets quality criteria</td></tr>
+<tr><td><code>install</code></td><td>install the package into the local repository, for use as a dependency in other projects locally</td></tr>
+<tr><td><code>deploy</code></td><td>done in an integration or release environment, copies the final package to the remote repository for sharing with other developers and projects</td></tr>
+</table>
+
 ## Specify projects
 <table>
 <col style="width:30%">
